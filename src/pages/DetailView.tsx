@@ -50,10 +50,10 @@ export const DetailView: React.FC<DetailViewProps> = ({ meals }) => {
   if (!meal) {
     return (
       <div className={styles.container}>
-        <p>Meal details not found or loading...</p>
-        <Link to="/" className={styles.navButton}>
+        <p>Loading...</p>
+        {/* <Link to="/" className={styles.navButton}>
           Back to List
-        </Link>
+        </Link> */}
       </div>
     );
   }

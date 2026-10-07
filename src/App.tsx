@@ -6,6 +6,7 @@ import { GalleryView } from './pages/GalleryView';
 import { DetailView } from './pages/DetailView';
 import type { Meal } from './types/meal';
 import { fetchAllMeals } from './services/api';
+import { ScrollToTop } from './components/ScrollToTop'; //
 
 export const App: React.FC = () => {
   const [meals, setMeals] = useState<Meal[]>([]);
@@ -24,6 +25,7 @@ export const App: React.FC = () => {
 
   return (
     <div>
+      <ScrollToTop />
       <Navbar />
      
       <Routes>
